@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
         // Usuario no logueado
         console.log('El usuario NO está logueado');
         navRight.innerHTML = `
-            <li><a href="/views/pages/login.html">Iniciar sesión</a></li>
-            <li><a href="/views/pages/registro.html">Registrarse</a></li>
+            <li><a href="./views/pages/login.html">Iniciar sesión</a></li>
+            <li><a href="./views/pages/registro.html">Registrarse</a></li>
         `;
     }
 });
