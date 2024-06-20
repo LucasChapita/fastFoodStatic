@@ -14,13 +14,20 @@
     </nav>
     <div class="container">
         <h2>Iniciar Sesión</h2>
-        <form class="login-form" action="tu_ruta_de_inicio_de_sesion" method="POST">
+        <form class="login-form" onsubmit="return validarCredenciales()">
+            <!-- Campo de correo electrónico -->
             <input type="email" name="email" placeholder="Correo electrónico" required>
+            <!-- Campo de contraseña -->
             <input type="password" name="password" placeholder="Contraseña" required>
+            <!-- Botón para iniciar sesión -->
             <button type="submit">Iniciar Sesión</button>
         </form>
         <a href="registro.html">¿No tienes una cuenta? Regístrate aquí</a>
+        <!-- Div para mostrar el mensaje de resultado -->
+        <div id="mensaje" style="margin-top: 20px;"></div>
     </div>
+
+    <script src="/js/login.js"></script> <!-- Enlace al archivo JavaScript -->
 </body>
 
 </html>
